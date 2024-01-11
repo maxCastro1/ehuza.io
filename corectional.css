@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body,
+  html {
+    font-family: "Roboto", sans-serif;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  nav {
+  background-color:#0C0806;
+  color: white;
+  padding-inline: 60px;
+  }
+  section {
+    max-width: 90rem;
+    margin-inline:auto;
+    padding-block: 5rem;
+    padding-inline: 60px;
+  }
+  .correctional-hero-section{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .correctional-hero-section-header{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  .correctional-hero-section-header > h1{
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 120%; /* 4.8rem */
+    max-width:64.75rem;;
+  }
+  .correctional-hero-section-header > h1 > .highlighted-text-body{
+    color:#A48C6C
+  }
+  .correctional-hero-section-header > p, .service-section > p{
+    color: rgba(0, 0, 0, 0.67);
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 120%; /* 1.6875rem */
+    max-width: 40rem;
+  }
+  .correctional-hero-section-main{
+     display: flex;
+     gap: 2rem;
+     width: 100%;
+     justify-content: center;
+     flex-wrap: wrap;
+  }
+  .service-card{
+    display: flex;
+min-width: 20rem;
+max-width: 26rem;
+padding: 2rem 1rem;
+align-items: center;
+justify-content: center;
+gap: 1.5rem;
+flex: 1 0 0;
+border-radius: 0.75rem;
+border: 1px solid rgba(164, 140, 108, 0.20);
+background: rgba(228, 220, 211, 0.50);
+box-shadow: 0px 4px 10px 0px rgba(164, 140, 108, 0.20);}
+
+  .service-card:hover{
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+   transform: scale(1.05);
+  }
+  .service-card > div {
+   width: 76px;
+   height: 76px;
+  border-radius: 3.75rem;
+  background: rgba(164, 140, 108, 0.20);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.service-card > div>  img{
+  width: 3rem;
+height: 3rem;
+}
+.service-card > p {
+  color: #A48C6C;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 140%; /* 2.1rem */
+}
+.aleady-have-code{
+  border-radius: 0.75rem;
+border: 1px solid #A48C6C;
+background: #FFF;
+display: flex;
+gap: 1rem;
+padding: 1rem;
+align-items: center;
+font-size: 1.125rem;
+font-weight: 400;
+
+}
+.aleady-have-code > button{
+  border-radius: 0.5rem;
+border: 1px solid #A48C6C;
+background: rgba(228, 220, 211, 0.50);
+display: flex;
+align-items: center;
+gap: .5rem;
+font-weight: 600;
+padding: 1rem;
+
+}
+.aleady-have-code > button > img{
+width: 24px;
+
+}
+.how-it-works-section{
+  display: flex;
+  gap: 4rem;
+  background-color: white;
+}
+.how-it-works-into{
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.how-it-works-into-title{
+font-size: 3.25rem;
+font-style: normal;
+font-weight: 300;
+
+}
+.how-it-works-into-title > .highlighted-text-body{
+  color: #A48C6C;
+
+}
+.how-it-works-intro-desciption{
+  color: rgba(0, 0, 0, 0.67);
+font-weight: 400;
+line-height: 120%; /* 1.5rem */
+}
+.how-it-works-card-header > img {
+  width: 1.5rem;
+height: 1.5rem;
+}
+.how-it-works-card-cont{
+  display: flex;
+  gap: 1.5rem;
+}
+.how-it-works-card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+padding: 2rem 1rem;
+border-radius: 0.75rem;
+border: 1px solid rgba(164, 140, 108, 0.50);
+background: #FFF;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.how-it-works-card-header{
+  display: flex;
+  justify-content:space-between;
+}
+.how-it-works-card-header > p{
+  padding: .5rem 1rem;
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 120%; /* 1.5rem */
+  border-radius: 0.5rem;
+  background: rgba(228, 220, 211, 0.50);
+}
+.how-it-works-card-title{
+font-size: 1.5rem;
+line-height: 150%; /* 2.25rem */
+font-weight: 700;
+}
+.how-it-works-card-description{
+font-size: 1rem;
+font-weight: 400;
+line-height: 120%; /* 1.5rem */
+color: rgba(0, 0, 0, 0.67);
+}
+.service-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.service-section-sub-title{
+  color: rgba(0, 0, 0, 0.67);
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 62.75rem !important;
+  ;
+}
+.service-section-title> .highlighted-text-body{
+  color: #A48C6C;
+}
+.service-section-title{
+  color: rgba(0, 0, 0, 0.87);
+text-align: center;
+font-size: 3.25rem !important;
+font-weight: 300 !important;
+line-height: 120%;
+}
+
+.corectional-service-card > img {
+  width: 2rem;
+}
+.corectional-service-card {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.75rem;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+text-align: center;
+gap: 1rem;
+border:  solid 1px rgba(164, 140, 108,.2);
+}
+.corectional-service-card > button{
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+border: 1px solid #A48C6C;
+background: linear-gradient(94deg, #000 3.39%, #A48C6C 118.23%);
+color: white;
+cursor: pointer;
+margin-top: auto;
+}
+.corectional-service-card > button:hover{
+  transition: all .2s ease-in-out;
+transform: scale(1.05);
+}
+.corectional-service-card > button > img{
+width: 24px;
+}
+.margin {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px){
+  .service-card {
+    padding: 1rem !important;
+    justify-content: flex-start;
+  }
+  }
+
+@media screen and (max-width: 570px){
+  section,nav {
+    padding-inline: 1rem;
+  }
+  .correctional-hero-section-header > h1,.service-section-title{
+    font-size: 2rem;
+  }
+  .correctional-hero-section-header > p,.service-section-sub-title{
+    font-size: 1rem !important;
+  }
+  .how-it-works-card-title{
+    font-size: 1rem;
+  }
+  .how-it-works-card-description{
+    font-size: .8rem;
+  }
+}

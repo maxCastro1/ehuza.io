@@ -1,0 +1,39 @@
+nav,footer {
+    background: #150F5A;
+}
+.schools-color {
+    color:#0083FF !important;
+}
+.schools-service-card{
+    border: 1px solid rgba(0, 131, 255, 0.20);
+    background: rgba(0, 131, 255, 0.20);
+    box-shadow: 0px 4px 10px 0px rgba(164, 140, 108, 0.20);
+    color: #0083FF;
+}
+.schools-service-card > div {
+    background-color: rgba(0, 131, 255, 0.20) !important;
+}
+.schools-service-card > div > img{
+    width:auto;
+    height: auto;
+ }
+.schools-service-card > p{
+    color: #0083FF;
+}
+.schools-how-it-works-card{
+    border: 1px solid rgba(0, 131, 255, 0.20);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.schools-how-it-works-card-header > p {
+    color: #0083FF;
+    background-color: hsla(209, 100%, 50%, 0.2);
+
+}
+.schools-btn {
+    background: #0083FF!important;
+}
+.schools-service-cards{
+    border: 1px solid rgba(0, 131, 255, 0.20);
+    background: #D1E9FF;
+}

@@ -39,7 +39,7 @@
       .hero-section-main p,.hero-image {
         max-width: 500px;
       }
-      section {
+       nav,.hero-section-main {
         padding-inline: 30px;
       }
       .how-it-works-section{
@@ -50,12 +50,18 @@
         grid-template-columns: repeat(2,auto) !important;
         gap: 2rem !important;
       }
+      .nav-links {
+        display: none;
+   }
+   .menu-btn {
+     display: flex;
+   }
    
     
   }
 @media screen and (max-width: 760px) {
 
-    .hero-section,section {
+     nav,.hero-section-main {
         padding-inline: 30px;
       }
       .hero-section-main  {
@@ -71,12 +77,6 @@
       }
       .hero-section-main p,.hero-image {
         /* max-width: 350px; */
-      }
-      .nav-links {
-           display: none;
-      }
-      .menu-btn {
-        display: flex;
       }
       .cta-btn {
         flex-direction: column;
@@ -163,13 +163,13 @@
  
       grid-template-columns: repeat(1,auto) !important;
     }
-    section {
+    nav,.hero-section-main  {
       padding-inline: 1rem;
     }
 }
   
 @media screen and (max-width: 425px) {
-    .hero-section {
+  nav,.hero-section-main {
         padding-inline: 1rem;
       }
   .hero-section-main > h1 {

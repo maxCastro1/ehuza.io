@@ -21,6 +21,9 @@
   color: white;
   padding-inline: 60px;
   }
+  footer{
+   background-color:#0C0806;
+  }
   section {
     max-width: 90rem;
     margin-inline:auto;

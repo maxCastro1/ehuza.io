@@ -1,4 +1,31 @@
-
+@media screen and (max-width: 1240px) {
+  .hero-section-main{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    max-height: unset;
+    height: 100%;
+    gap: 4rem;
+  }
+  .hero-section-main-left {
+    padding-top: 4rem;
+  }
+  .cta-btn {
+   
+    justify-content: center;
+}
+  .hero-section-main-left
+  {
+    height: 60%;
+    width: 100%;
+    align-items: center;
+}
+.img-cont-hero-page{
+  min-height: 30%;
+  margin-top: 0;
+}
+ 
+}
 @media screen and (max-width: 1100px) {
     .product-section-correctional-container{
         flex-direction: column;
@@ -29,6 +56,14 @@
     .product-section-correctional-left{
         text-align: center;
     }
+    .image-text{
+      left: 11rem;
+    }
+    .second-text {
+      left: unset;
+      bottom: 4rem;
+      right: -3rem;
+  }
 
     
   }
@@ -59,6 +94,16 @@
    
     
   }
+  @media screen and (max-width: 780px){
+    .image-text {
+      left: 8rem;
+  }
+    .second-text {
+      left: unset;
+      bottom: 1rem;
+      right: -5rem;}
+  }
+
 @media screen and (max-width: 760px) {
 
      nav,.hero-section-main {
@@ -68,10 +113,10 @@
         padding-top: 2rem;
         gap: 1rem;
       }
-    .hero-section-main > h1 {
-        font-size: 3rem;
+    .hero-section-main  h1 {
+        font-size: 4rem;
       }
-    .hero-section-main > p {
+    .hero-section-main  p {
         font-size: .8rem;
         font-weight: 300;
       }
@@ -145,6 +190,10 @@
     .product-section{
           padding-inline: 1rem;
     }
+    .social-links {
+    
+      justify-content: center;
+    }
 
     .product-section-schools-container-right-bottom {
         padding: 1rem;
@@ -167,12 +216,16 @@
       padding-inline: 1rem;
     }
 }
-  
+@media screen and (max-width: 530px) {
+  .image-text {
+    display: none;
+  }
+}
 @media screen and (max-width: 425px) {
   nav,.hero-section-main {
         padding-inline: 1rem;
       }
-  .hero-section-main > h1 {
+  .hero-section-main  h1 {
     font-size: 3rem;
   }
   .hero-section-main p,.hero-image {

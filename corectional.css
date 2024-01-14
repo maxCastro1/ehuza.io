@@ -44,7 +44,7 @@
     align-items: center;
   }
   .correctional-hero-section-header > h1{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 120%; /* 4.8rem */
     max-width:64.75rem;;
@@ -57,7 +57,7 @@
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 120%; /* 1.6875rem */
-    max-width: 40rem;
+    max-width: 30rem;
   }
   .correctional-hero-section-main{
      display: flex;
@@ -70,10 +70,10 @@
     display: flex;
 min-width: 20rem;
 max-width: 26rem;
-padding: 2rem 1rem;
+padding:1rem;
 align-items: center;
-justify-content: center;
-gap: 1.5rem;
+justify-content: flex-start;
+gap: 2rem;
 flex: 1 0 0;
 border-radius: 0.75rem;
 border: 1px solid rgba(164, 140, 108, 0.20);
@@ -100,8 +100,8 @@ height: 3rem;
 }
 .service-card > p {
   color: #A48C6C;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   line-height: 140%; /* 2.1rem */
 }
 .aleady-have-code{

@@ -17,9 +17,74 @@
             <div class="flex navBar-right-cont">
                 <a class="nav-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
                 <a class="nav-links" href="schools.html">Schools</a>
-                <a class="nav-links" href="#products">Products </a>
-                <a class="nav-links" href="contact-us.html">Contact</a>
-                <a class="nav-links" href="about-us.html">About</a>
+                <div id="dropdown" class="nav-links product-dropdown">
+                    <div>
+                      <button id="menu-button" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
+                        Products
+                        <svg viewBox="0 0 20 20" aria-hidden="true" id="products-arrow">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                  
+                    <div id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu product-dropdown-container">
+                      <div class="product-dropdown-left">
+                        <span class="dropdown-titles">Schools</span>
+                        <div>
+                            <a href="schools.html">
+                                <p class="link-title schools">Physical Visit</p>
+                                <p>Schedule a physical Visit Now </p>
+                            </a>
+                            <a href="schools.html">
+                                <p class="link-title schools">Video Visit</p>
+                                <p>Schedule a viedo Visit Now </p>
+                            </a>
+                            <a href="schools.html">
+                                <p class="link-title schools">Send Money</p>
+                                <p>Send Money Now </p>
+                            </a>
+                        </div>
+                      </div>
+                      <div class="product-dropdown-right">
+                        <span class="dropdown-titles">Correctional Facilities</span>
+                        <div>
+                            <a href="correctional-facilities-langind-page.html">
+                                <p class="link-title  corectional">Physical Visit</p>
+                                <p>Schedule a physical Visit Now </p>
+                            </a>
+                            <a href="correctional-facilities-langind-page.html">
+                                <p class="link-title corectional">Video Visit</p>
+                                <p>Schedule a viedo Visit Now </p>
+                            </a>
+                            <a href="correctional-facilities-langind-page.html">
+                                <p class="link-title corectional">Send Money</p>
+                                <p>Send Money Now </p>
+                            </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                <a class="nav-links">Pricing</a>
+               
+                <div id="dropdown" class="nav-links product-dropdown">
+                    <div>
+                      <button id="menu-button-company" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
+                        Company
+                        <svg viewBox="0 0 20 20" aria-hidden="true" id="company-arrow">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                  
+                    <div id="menu-company" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu">
+                      <div>
+                        <a href="contact-us.html" role="menuitem" tabindex="-1" id="menu-item-0">Contact Us</a>
+                        <a href="about-us.html" role="menuitem" tabindex="-1" id="menu-item-1">About Us</a>
+                      </div>
+                    </div>
+                  </div>
                 
             </div>
             <button class="menu-btn"><img src="./images/menu.svg"></button>
@@ -27,16 +92,23 @@
                 <button id="close-btn"><img src="./images/close-menu.svg"></button>
                 <a class="mobile-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
                 <a class="mobile-links" href="schools.html">Schools</a>
-                <a class="mobile-links" href="#products">Products </a>
                 <a class="mobile-links" href="contact-us.html">Contact Us</a>
                 <a class="mobile-links" href="about-us.html">About Us</a>
             </div>
         </nav>
         <div class="flex hero-section-main">
             <div class="hero-section-main-left">
-                <h1>Stay <span class="highlighted-text">Connected</span>, <br>
-                    Show You <span class="highlighted-text">Care</span>.
+    
+                <h1 class="hero-title">Connecting <span class="highlighted-text">Families</span>, <br>
+                    Away from <span class="highlighted-text">Home</span>.
                 </h1>
+                <h1 class=" hero-title hidden">Telephone <span class="highlighted-text">Communication</span>, <br>
+                     <span class="highlighted-text">Management</span> System.
+                </h1>
+                <h1 class=" hero-title hidden">Visit <span class="highlighted-text">Loved Ones</span>, <br>
+                    Anywhere <span class="highlighted-text">You Are</span>.
+                </h1>
+
                 <p>
                     eHuza makes it easier for you to stay connected with and support your loved ones. Fostering connections through education, nurturing growth, and facilitating visits. Ensuring support from anywhere, eHuza stands with you!
                 </p>
@@ -45,12 +117,18 @@
                     <a href="schools.html">Schools eHuza</a>
                 </div>
             </div>
-            
             <div class="img-cont-hero-page">
+                <img src="./images/background-1.png" class="hero-image" alt="people communicating through video call">
+            </div>
+            <div class="img-cont-hero-page hidden">
                 <div class="image-text">Hello? can i schudule a visit online</div>
                 <img src="./images/101-removebg-preview 1.png" class="hero-image" alt="people communicating through video call">
                 <div class="image-text second-text">yes, just a moment, please.</div>
             </div>
+            <div class="img-cont-hero-page hidden">
+                <img src="./images/background-1.png" class="hero-image" alt="people communicating through video call">
+            </div>
+           
         </div>
     </section>
     <section class="flex product-section" id="products">
@@ -242,7 +320,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-text">© eHuza 2022. All rights reserved.</p>
+            <p class="footer-text">© eHuza 2023. All rights reserved.</p>
             <div>
                 <a href="#" class="footer-text">Privacy Policy</a>
                 <a href="#" class="footer-text">Terms of Service</a>

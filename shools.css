@@ -14,8 +14,9 @@ nav,footer {
     background-color: rgba(0, 131, 255, 0.20) !important;
 }
 .schools-service-card > div > img{
-    width:auto;
-    height: auto;
+    width: 16px;
+    height: 24px;
+    object-fit: contain;
  }
 .schools-service-card > p{
     color: #0083FF;

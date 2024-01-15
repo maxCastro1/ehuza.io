@@ -14,6 +14,7 @@ html {
   font-family: "Roboto", sans-serif;
   background-color: #f8f8ff;
   scroll-behavior: smooth;
+  position: relative;
 }
 img {
   width: 100%;
@@ -37,6 +38,11 @@ nav {
   border-bottom: solid 1px rgba(248, 248, 255, 0.2);
   padding-inline: var(--lg-padding);
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(7, 34, 131, 0.8);
+  backdrop-filter: blur(10px);
 }
 .logo > img {
   height: 60px;
@@ -53,16 +59,18 @@ nav {
   color: white;
 }
 .navBar-left-cont a:hover,
-.navBar-right-cont a:hover {
+.navBar-right-cont a:hover,.dropdown-btn:hover, .dropdown-btn:hover > svg {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   transform: scale(1.08);
   color: orange;
+  fill: orange;
 }
 .mobile-nav {
   /* display: none; */
   padding-inline-start: 2rem;
   display: none;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -100,16 +108,123 @@ nav {
 #close-btn:hover {
   transform: scale(1.05);
 }
+.product-dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+
+.dropdown-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-btn svg {
+  margin-right: -0.25rem;
+  height: 1rem;
+  width: 1rem;
+  fill: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  justify-content: center;
+  right: 0;
+  z-index: 10;
+  margin-top: 0.5rem;
+  width: max-content;
+  background-color: white;
+  border-radius: 0.375rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  outline: none;
+  display: none;
+  min-width: 10rem;
+}
+
+#menu div,#menu-company div {
+  padding: 0.25rem 0;
+}
+#menu a, #menu button , #menu-company a , #menu-company button{
+  color: #4B5563;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+#products-arrow,#company-arrow {
+  transition: all .2s ease-in-out;
+}
+.dropdown-titles { 
+  font-weight: 500;
+  color: rgba(0, 0, 0,.87) !important;
+}
+.product-dropdown-container{
+  padding: 1rem;
+  gap: 2rem;
+}
+.product-dropdown-left,.product-dropdown-right{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #000;
+}
+.product-dropdown-left a:hover,.product-dropdown-right a:hover {
+  transition: all .2s ease-in-out;
+   cursor: pointer;
+   background-color: rgba(99, 99, 99, 0.1);
+}
+.schools{
+  color:#0083FF !important;
+}
+.corectional {
+  color:#A48C6C !important;
+}
+.mobile-nav .dropdown-menu {
+  right: -50%;
+}
+.mobile-nav .product-dropdown-container{
+  right: -15rem;
+}
+.product-dropdown-container .product-dropdown-left > div ,.product-dropdown-container .product-dropdown-right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mobile-dropdown{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.link-title {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.67);
+}
+
 .hero-section-main {
   align-items: center;
   padding-inline: var(--lg-padding);
   width: 100%;
   overflow: hidden;
-  height: calc(100vh - 60px);
-  max-height: 768px;
+  min-height: calc(100vh - 60px);
+  /* max-height: 768px; */
   max-width: 1440px;
   margin-inline: auto;
   position: relative;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  transition: all .2s ease-in-out;
 }
 .hero-section-main-left,
 .img-cont-hero-page {
@@ -122,7 +237,7 @@ nav {
 }
 .hero-section-main-left > h1 {
   color: rgba(255, 255, 255, 0.87);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 90%;
   font-weight: 200;
@@ -140,6 +255,28 @@ nav {
   color: #fff;
   font-weight: 700;
 }
+.img-cont-hero-page {
+  position: absolute;
+  right: 0;
+}
+.hero-section-main-left h1, .img-cont-hero-page {
+  transition: all 1s ease-in-out;
+  transform: translateY(0px);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  display: none;
+}
+
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  display: flex;
+}
+
 .cta-btn {
   padding-top: 1rem;
   gap: 1rem;
@@ -173,7 +310,7 @@ nav {
   max-width: 768px;
 }
 .img-cont-hero-page {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;

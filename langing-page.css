@@ -217,7 +217,7 @@ nav {
   padding-inline: var(--lg-padding);
   width: 100%;
   overflow: hidden;
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   /* max-height: 768px; */
   max-width: 1440px;
   margin-inline: auto;

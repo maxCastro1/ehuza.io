@@ -49,42 +49,70 @@ document.getElementById('menu-button').addEventListener('click', function() {
     arrow.style.transform = "rotate(0deg)"
   }
 });
-document.getElementById('menu-button-mobile').addEventListener('click', function() {
-  var menu = document.getElementById('menu-mobile');
-  var arrow = document.getElementById('products-arrow-mobile');
-  console.log(arrow)
-  if (menu.style.display === 'none' || menu.style.display === '') {
-    menu.style.display = 'flex';
-    arrow.style.transform = "rotate(-180deg)"
-  } else {
-    menu.style.display = 'none';
-    arrow.style.transform = "rotate(0deg)"
-  }
-});
+// let menuButtonMobile = document.getElementById('menu-button-mobile')
+// if(menuButtonMobile?.length !== 0 && !menuButtonMobile) {
+//   menuButtonMobile.addEventListener('click', function() {
+//     var menu = document.getElementById('menu-mobile');
+//     var arrow = document.getElementById('products-arrow-mobile');
+//     console.log(arrow)
+//     if (menu.style.display === 'none' || menu.style.display === '') {
+//       menu.style.display = 'flex';
+//       arrow.style.transform = "rotate(-180deg)"
+//     } else {
+//       menu.style.display = 'none';
+//       arrow.style.transform = "rotate(0deg)"
+//     }
+//   });
+// }
+let menuButtonMobile = document.getElementById('menu-button-mobile');
 
-document.getElementById('menu-button-company').addEventListener('click', function() {
-  var menu = document.getElementById('menu-company');
-  var arrow = document.getElementById('company-arrow');
-  if (menu.style.display === 'none' || menu.style.display === '') {
-    menu.style.display = 'flex';
-    arrow.style.transform = "rotate(-180deg)"
-  } else {
-    menu.style.display = 'none';
-    arrow.style.transform = "rotate(0deg)"
-  }
-});
-document.getElementById('menu-button-compan-mobile').addEventListener('click', function() {
-  console.log("cki")
-  var menu = document.getElementById('menu-company-mobile');
-  var arrow = document.getElementById('company-arrow-mobile');
-  if (menu.style.display === 'none' || menu.style.display === '') {
-    menu.style.display = 'flex';
-    arrow.style.transform = "rotate(-180deg)"
-  } else {
-    menu.style.display = 'none';
-    arrow.style.transform = "rotate(0deg)"
-  }
-});
+if(menuButtonMobile) {
+  menuButtonMobile.addEventListener('click', function() {
+    var menu = document.getElementById('menu-mobile');
+    var arrow = document.getElementById('products-arrow-mobile');
+    console.log(arrow)
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'flex';
+      arrow.style.transform = "rotate(-180deg)"
+    } else {
+      menu.style.display = 'none';
+      arrow.style.transform = "rotate(0deg)"
+    }
+  });
+}
+
+
+let menuButtonCompany = document.getElementById('menu-button-company')
+if (menuButtonCompany?.length !== 0){
+  menuButtonCompany.addEventListener('click', function() {
+    var menu = document.getElementById('menu-company');
+    var arrow = document.getElementById('company-arrow');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'flex';
+      arrow.style.transform = "rotate(-180deg)"
+    } else {
+      menu.style.display = 'none';
+      arrow.style.transform = "rotate(0deg)"
+    }
+  });
+}
+
+let menuButtonCompanMobile = document.getElementById('menu-button-compan-mobile');
+
+if(menuButtonCompanMobile) {
+  menuButtonCompanMobile.addEventListener('click', function() {
+    var menu = document.getElementById('menu-company-mobile');
+    var arrow = document.getElementById('company-arrow-mobile');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'flex';
+      arrow.style.transform = "rotate(-180deg)"
+    } else {
+      menu.style.display = 'none';
+      arrow.style.transform = "rotate(0deg)"
+    }
+  });
+}
+
 
 var headers = document.getElementsByClassName('hero-title');
 var images = document.getElementsByClassName('img-cont-hero-page');

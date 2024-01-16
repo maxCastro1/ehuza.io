@@ -134,7 +134,7 @@ function switchHeaderAndImage() {
 }
 
 window.onload = function() {
-    setInterval(switchHeaderAndImage, 15000); // Switch headers and images every 5 seconds
+    setInterval(switchHeaderAndImage, 10000); // Switch headers and images every 5 seconds
 };
 
 

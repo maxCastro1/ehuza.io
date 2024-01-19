@@ -7,10 +7,6 @@ function toggleMenu() {
     menu.classList.toggle("open");
     
   }
-
-
-  
-
     function toggleFAQDescription(btn) {
         const description = btn.closest(".faqs-body-question").nextElementSibling;
 
@@ -37,33 +33,44 @@ faqBtns.forEach(btn => {
   closeButton.addEventListener("click", toggleMenu);
 //   toggleFAQDescription()
 
-document.getElementById('menu-button').addEventListener('click', function() {
+var timeoutId;
+
+document.getElementById('menu-button').addEventListener('mouseover', function() {
   var menu = document.getElementById('menu');
   var arrow = document.getElementById('products-arrow');
-  console.log(arrow)
-  if (menu.style.display === 'none' || menu.style.display === '') {
-    menu.style.display = 'flex';
-    arrow.style.transform = "rotate(-180deg)"
-  } else {
-    menu.style.display = 'none';
-    arrow.style.transform = "rotate(0deg)"
-  }
+  menu.style.display = 'flex';
+  arrow.style.transform = "rotate(-180deg)"
+ 
 });
-// let menuButtonMobile = document.getElementById('menu-button-mobile')
-// if(menuButtonMobile?.length !== 0 && !menuButtonMobile) {
-//   menuButtonMobile.addEventListener('click', function() {
-//     var menu = document.getElementById('menu-mobile');
-//     var arrow = document.getElementById('products-arrow-mobile');
-//     console.log(arrow)
-//     if (menu.style.display === 'none' || menu.style.display === '') {
-//       menu.style.display = 'flex';
-//       arrow.style.transform = "rotate(-180deg)"
-//     } else {
-//       menu.style.display = 'none';
-//       arrow.style.transform = "rotate(0deg)"
-//     }
-//   });
-// }
+
+document.getElementById('menu-button').addEventListener('mouseout', function(e) {
+ var menu = document.getElementById('menu');
+ var arrow = document.getElementById('products-arrow');
+ if (!menu.contains(e.relatedTarget) && !menuButton.contains(e.relatedTarget)) {
+  timeoutId = setTimeout(function() {
+   menu.style.display = 'none';
+   arrow.style.transform = "rotate(0deg)"
+  }, 200); // 1 second delay
+ }
+});
+
+document.getElementById('menu').addEventListener('mouseout', function(e) {
+ var menu = document.getElementById('menu');
+ var arrow = document.getElementById('products-arrow');
+ var menuButton = document.getElementById('menu-button')
+ if (!menu.contains(e.relatedTarget) && !menuButton.contains(e.relatedTarget)) {
+  timeoutId = setTimeout(function() {
+   menu.style.display = 'none';
+    arrow.style.transform = "rotate(0deg)"
+  }, 200); // 1 second delay
+ }
+});
+
+document.getElementById('menu').addEventListener('mouseover', function() {
+ clearTimeout(timeoutId);
+});
+
+  
 let menuButtonMobile = document.getElementById('menu-button-mobile');
 
 if(menuButtonMobile) {
@@ -82,20 +89,49 @@ if(menuButtonMobile) {
 }
 
 
-let menuButtonCompany = document.getElementById('menu-button-company')
-if (menuButtonCompany?.length !== 0){
-  menuButtonCompany.addEventListener('click', function() {
-    var menu = document.getElementById('menu-company');
-    var arrow = document.getElementById('company-arrow');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-      menu.style.display = 'flex';
-      arrow.style.transform = "rotate(-180deg)"
-    } else {
-      menu.style.display = 'none';
-      arrow.style.transform = "rotate(0deg)"
-    }
-  });
+
+var timeoutIdCompany;
+
+document.getElementById('menu-button-company').addEventListener('mouseover', function() {
+ var menu = document.getElementById('menu-companys');
+ var arrow = document.getElementById('company-arrow');
+  menu.style.display = 'flex';
+ arrow.style.transform = "rotate(-180deg)"
+});
+
+document.getElementById('menu-button-company').addEventListener('mouseout', function(e) {
+ var menu = document.getElementById('menu-companys');
+ var arrow = document.getElementById('company-arrow');
+ console.log(`mouse in menu ${menu.contains(e.relatedTarget)}`)
+ if (!menu.contains(e.relatedTarget)) {
+  timeoutIdCompany = setTimeout(function() {
+  menu.style.display = 'none';
+  arrow.style.transform = "rotate(0deg)"
+  }, 200); // 1 second delay
+ }
+});
+
+document.getElementById('menu-companys').addEventListener('mouseout', function(e) {
+var menu = document.getElementById('menu-companys');
+var arrow = document.getElementById('company-arrow');
+var menuButton = document.getElementById('menu-button-company')
+
+if (!menu.contains(e.relatedTarget) && !menuButton.contains(e.relatedTarget)) {
+timeoutIdCompany = setTimeout(function() {
+menu.style.display = 'none';
+arrow.style.transform = "rotate(0deg)"
+}, 200); // 1 second delay
 }
+});
+
+document.getElementById('menu-companys').addEventListener('mouseover', function() {
+clearTimeout(timeoutIdCompany);
+});
+
+document.getElementById('menu-companys').addEventListener('mouseover', function() {
+clearTimeout(timeoutIdCompany);
+});
+
 
 let menuButtonCompanMobile = document.getElementById('menu-button-compan-mobile');
 
@@ -119,7 +155,6 @@ var images = document.getElementsByClassName('img-cont-hero-page');
 var count = 0;
 
 function switchHeaderAndImage() {
-  console.log(headers)
   if(headers.length === 0) {
     return
   }
@@ -134,7 +169,7 @@ function switchHeaderAndImage() {
 }
 
 window.onload = function() {
-    setInterval(switchHeaderAndImage, 10000); // Switch headers and images every 5 seconds
+    setInterval(switchHeaderAndImage, 5000); // Switch headers and images every 5 seconds
 };
 
 

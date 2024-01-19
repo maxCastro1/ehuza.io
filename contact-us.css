@@ -14,6 +14,7 @@ footer {
     flex-direction: column;
     align-items: center; 
     gap: 3rem;
+    padding-top: 7rem;
 }
 .contact-header{
     display: flex;
@@ -23,7 +24,7 @@ footer {
     gap: 1.5rem;
 }
 .contact-header > h1 {
-    color: #D56723;
+    color: #001529;
 
     font-size: 3rem;
     font-weight: 700;
@@ -111,7 +112,7 @@ align-items: center;
 gap: 0.5rem;
 border-radius: 0.5rem;
 border: 1px solid rgba(213, 103, 35, 0.50);
-background: #D56723;
+background: #001529;
 color: white;
 font-weight: bold;
 cursor: pointer;

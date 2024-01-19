@@ -52,7 +52,7 @@ nav {
   font-size: 1rem;
   font-weight: 400;
   align-items: center;
-  padding-block: 1.5rem;
+
 }
 .nav-links {
   /* color: #000 !important; */
@@ -125,6 +125,9 @@ nav {
   border: none;
   transition: background-color 0.2s ease-in-out;
   gap: .5rem;
+  height: 100%;
+  padding-block: 1.5rem;
+
 }
 
 .dropdown-btn svg {
@@ -153,10 +156,10 @@ nav {
 }
 .dropdown-menu > 
 
-#menu div,#menu-company div {
+#menu div,#menu-companys div {
   padding: 0.25rem 0;
 }
-#menu a, #menu button , #menu-company a , #menu-company button{
+#menu a, #menu button , #menu-companys a , #menu-companys button{
   color: #4B5563;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
@@ -179,12 +182,7 @@ nav {
   gap: 2rem;
   color: #000;
 }
-.dropdown-divider{
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  padding: 0 !important;
-}
+
 .product-dropdown-left > div > a,.product-dropdown-right > div > a {
  display: flex;
  flex-direction: column;
@@ -220,9 +218,14 @@ nav {
   display: flex;
   flex-direction: column;
   color: black;
-  padding: 1rem;
+  padding: 1.5rem 1rem !important;
   gap: 1rem;
   align-items: center;
+  font-weight: 500;
+}
+.mobile-dropdown > a:hover{
+  color: orange !important;
+  transition: all .2s ease-in-out;
 }
 
 .link-title {

@@ -38,3 +38,13 @@ nav,footer {
     border: 1px solid rgba(0, 131, 255, 0.20);
     background: #D1E9FF;
 }
+
+
+@media screen and (max-width: 1024px){
+    .how-it-works-card-cont,.how-it-works-section  {
+        flex-wrap: wrap;
+    }
+    .schools-how-it-works-card,.how-it-works-card {
+        max-width: 20rem;
+    }
+    }

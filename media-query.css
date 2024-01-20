@@ -106,6 +106,9 @@
    .menu-btn {
      display: flex;
    }
+   .dropdown-btn {
+    padding-block: 0;
+   }
    
     
   }
@@ -178,6 +181,13 @@
         flex-direction: column;
         align-items: center;
       }
+      .corectional-service-card {
+        padding: 2rem 1rem;
+        max-width: 20rem;
+      }
+      .margin {
+        grid-template-columns: repeat(1,auto) !important;
+      }
      
 
   }
@@ -228,10 +238,7 @@
     .how-it-works-card-cont{
       flex-direction: column;
     }
-    .margin {
  
-      grid-template-columns: repeat(1,auto) !important;
-    }
     nav,.hero-section-main  {
       padding-inline: 1rem;
     }
@@ -253,3 +260,12 @@
   }
 
   }
+
+  @media screen and (max-width: 1024px){
+    .how-it-works-card-cont,.how-it-works-section  {
+        flex-wrap: wrap;
+    }
+    .schools-how-it-works-card,.how-it-works-card {
+        max-width: 20rem;
+    }
+    }

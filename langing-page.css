@@ -256,6 +256,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  position: relative;
+    z-index: 2;
 }
 .hero-section-main-left > h1 {
   color: rgba(255, 255, 255, 0.87);
@@ -336,7 +338,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 .image-text {
   position: absolute;
@@ -836,4 +838,18 @@ footer {
 }
 footer {
   background-color: #072385;
+}
+.absolute {
+  position: absolute;
+  left: max(50%, 25rem);
+  top: 0;
+  height: 64rem;
+  width: 128rem;
+  transform: translateX(-50%);
+  stroke: #001529; /* Equivalent of gray-200 */
+  mask-image: radial-gradient(64rem 64rem at top, #001529, transparent);
+}
+
+.overflow-visible {
+  fill: rgba(0, 21, 41, 0.259); /* Equivalent of gray-50 */
 }

@@ -2,11 +2,11 @@ nav,footer {
     background: #150F5A;
 }
 .schools-color {
-    color:#0083FF !important;
+    color:#0084ff !important;
 }
 .schools-service-card{
     border: 1px solid rgba(0, 131, 255, 0.20);
-    background: rgba(0, 131, 255, 0.20);
+    background: #0083ff33;
     box-shadow: 0px 4px 10px 0px rgba(164, 140, 108, 0.20);
     color: #0083FF;
 }

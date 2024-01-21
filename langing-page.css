@@ -247,10 +247,14 @@ nav {
   padding-top: 7rem;
   padding-bottom: 2rem;
   transition: all .2s ease-in-out;
+  justify-content: space-between;
 }
-.hero-section-main-left,
-.img-cont-hero-page {
+.hero-section-main-left
+ {
   width: 50%;
+}
+.img-cont-hero-page {
+  width: 45%;
 }
 .hero-section-main-left {
   display: flex;

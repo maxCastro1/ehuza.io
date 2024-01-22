@@ -143,14 +143,19 @@ width: 24px;
 }
 .how-it-works-section{
   display: flex;
+  flex-direction: column;
   gap: 4rem;
   background-color: white;
+  align-items: center;
+ 
 }
 .how-it-works-into{
-  max-width: 15rem;
+  max-width:62.75rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: center;
+  align-items: center;
 }
 .how-it-works-into-title{
 font-size: 3.25rem;
@@ -184,6 +189,7 @@ border-radius: 0.75rem;
 border: 1px solid rgba(164, 140, 108, 0.50);
 background: #FFF;
 box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+flex: 1 1 0%;
 }
 .how-it-works-card-header{
   display: flex;
@@ -199,14 +205,14 @@ box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background: rgba(228, 220, 211, 0.50);
 }
 .how-it-works-card-title{
-font-size: 1.5rem;
+font-size: 1rem;
 line-height: 150%; /* 2.25rem */
 font-weight: 700;
 }
 .how-it-works-card-description{
-font-size: 1rem;
+font-size: .8rem;
 font-weight: 400;
-line-height: 120%; /* 1.5rem */
+line-height: 150%; /* 1.5rem */
 color: rgba(0, 0, 0, 0.67);
 }
 .service-section{
@@ -249,6 +255,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 text-align: center;
 gap: 1rem;
 border:  solid 1px rgba(164, 140, 108,.2);
+max-width: 25rem;
 }
 .corectional-service-card > button{
   display: flex;
@@ -273,6 +280,16 @@ width: 24px;
 .margin {
   margin-top: 2rem;
 }
+@media screen and (max-width: 1293px){
+  .how-it-works-card-cont {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+  }
+  .how-it-works-card {
+    max-width: 25rem;
+  }
+}
+
 @media screen and (max-width: 1100px){
 .correctional-hero-section-header{
   flex-direction: column;

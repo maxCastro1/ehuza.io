@@ -11,162 +11,188 @@
 </head>
 
 <body>
-    <nav>
-        <div class="flex navBar-left-cont">
-            <a class="logo" href="index.html"><img src="./images/Icon logo eHuza website white.png"></a>
-        </div>
-        <div class="flex navBar-right-cont">
-            <a class="nav-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
-            <a class="nav-links" href="schools.html">Schools</a>
-            <div id="dropdown" class="nav-links product-dropdown">
+  <nav>
+    <div class="flex navBar-left-cont">
+        <a class="logo" href="index.html"><img src="./images/Icon logo eHuza website white.png"></a>
+    </div>
+    <div class="flex navBar-right-cont">
+        <a class="nav-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
+        <a class="nav-links" href="schools.html">Schools</a>
+        <div id="dropdown" class="nav-links product-dropdown">
+            <div>
+              <button id="menu-button" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
+                Products
+                <svg viewBox="0 0 20 20" aria-hidden="true" id="products-arrow">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            <div id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu product-dropdown-container">
+              <div class="product-dropdown-left">
+                <span class="dropdown-titles">Schools</span>
                 <div>
-                  <button id="menu-button" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
-                    Products
-                    <svg viewBox="0 0 20 20" aria-hidden="true" id="products-arrow">
-                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                </div>
-              
-                <div id="menu" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu product-dropdown-container">
-                  <div class="product-dropdown-left">
-                    <span class="dropdown-titles">Schools</span>
-                    <div>
-                        <a href="schools.html">
-                            <p class="link-title schools">Physical Visit</p>
+                    <a href="schools.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img">
+                            <img src="./images/el_person-black.svg">
+                        </div>
+                        <div>
+                             <p class="link-title schools">Physical Visit</p>
                             <p>Schedule a physical Visit Now </p>
-                        </a>
-                      
-                        <a href="schools.html">
-                            <p class="link-title schools">Video Visit</p>
-                            <p>Schedule a viedo Visit Now </p>
-                        </a>
-                     
-                        <a href="schools.html">
-                            <p class="link-title schools">Send Money</p>
-                            <p>Send Money Now </p>
-                        </a>
-                    </div>
-                  </div>
-                  <div class="product-dropdown-right">
-                    <span class="dropdown-titles">Correctional Facilities</span>
-                    <div>
-                        <a href="correctional-facilities-langind-page.html">
-                            <p class="link-title  corectional">Physical Visit</p>
-                            <p>Schedule a physical Visit Now </p>
-                        </a>
+                        </div>
                        
-                        <a href="correctional-facilities-langind-page.html">
-                            <p class="link-title corectional">Video Visit</p>
-                            <p>Schedule a viedo Visit Now </p>
-                        </a>
-                     
-                        <a href="correctional-facilities-langind-page.html">
-                            <p class="link-title corectional">Send Money</p>
-                            <p>Send Money Now </p>
-                        </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              
-            <a class="nav-links" href="pricing.html">Pricing</a>
-           
-            <div id="dropdown-company" class="nav-links product-dropdown">
-                <div>
-                  <button id="menu-button-company" class="dropdown-btn">
-                    Company
-                    <svg viewBox="0 0 20 20" aria-hidden="true" id="company-arrow">
-                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                </div>
-              
-                <div id="menu-companys" class="dropdown-menu">
-                  <div class="mobile-dropdown">
-                    <a href="contact-us.html" role="menuitem" tabindex="-1" id="menu-item-0">Contact Us</a>
-                    <a href="about-us.html" role="menuitem" tabindex="-1" id="menu-item-1">About Us</a>
-                  </div>
-                </div>
-              </div>
-            
-        </div>
-        <button class="menu-btn"><img src="./images/menu.svg"></button>
-        <div class="mobile-nav" id="mobile-navigation">
-            <button id="close-btn"><img src="./images/close-menu.svg"></button>
-            <a class="mobile-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
-            <a class="mobile-links" href="schools.html">Schools</a>
-            <div id="dropdown" class="mobile-links product-dropdown">
-                <div>
-                  <button id="menu-button-mobile" aria-expanded="true" aria-haspopup="true" class="dropdown-btn ">
-                    Products
-                    <svg viewBox="0 0 20 20" aria-hidden="true" id="products-arrow-mobile">
-                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                </div>
-              
-                <div id="menu-mobile" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu product-dropdown-container">
-                  <div class="product-dropdown-left">
-                    <span class="dropdown-titles">Schools</span>
-                    <div>
-                        <a href="schools.html">
-                            <p class="link-title schools">Physical Visit</p>
-                            <p>Schedule a physical Visit Now </p>
-                        </a>
-                        <a href="schools.html">
+                    </a>
+                  
+                    <a href="schools.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img"> <img src="./images/camera-black.svg"></div>
+                        <div>
                             <p class="link-title schools">Video Visit</p>
                             <p>Schedule a viedo Visit Now </p>
-                        </a>
-                        <a href="schools.html">
-                            <p class="link-title schools">Send Money</p>
+                        </div>
+                       
+                    </a>
+                 
+                    <a href="schools.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img"><img src="./images/money-black.svg"></div>
+                        <div>
+                            <p class="link-title schools">Money Transfer</p>
                             <p>Send Money Now </p>
-                        </a>
-                    </div>
-                  </div>
-                  <div class="product-dropdown-right">
-                    <span class="dropdown-titles">Correctional Facilities</span>
-                    <div>
-                        <a href="correctional-facilities-langind-page.html">
+                        </div>
+                       
+                    </a>
+                </div>
+              </div>
+              <div class="product-dropdown-right">
+                <span class="dropdown-titles">Correctional Facilities</span>
+                <div>
+                    <a href="correctional-facilities-langind-page.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img">  <img src="./images/el_person.svg"></div>
+                        <div>
                             <p class="link-title  corectional">Physical Visit</p>
                             <p>Schedule a physical Visit Now </p>
-                        </a>
-                        <a href="correctional-facilities-langind-page.html">
+                        </div>
+                     
+                    </a>
+                   
+                    <a href="correctional-facilities-langind-page.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img"><img src="./images/camera.svg"></div>
+                        <div>
                             <p class="link-title corectional">Video Visit</p>
                             <p>Schedule a viedo Visit Now </p>
-                        </a>
-                        <a href="correctional-facilities-langind-page.html">
-                            <p class="link-title corectional">Send Money</p>
+                        </div>
+                   
+                    </a>
+                 
+                    <a href="correctional-facilities-langind-page.html" class="dropdown-link-cont">
+                        <div class="dropdown-link-cont-img"><img src="./images/money.svg"></div>
+                        <div>
+                            <p class="link-title corectional">Money Transfer</p>
                             <p>Send Money Now </p>
-                        </a>
-                    </div>
+                        </div>
+                   
+                    </a>
+                </div>
 
-                  </div>
-                </div>
               </div>
-              
-            <a class="mobile-links">Pricing</a>
-           
-            <div id="dropdown-mobile" class="mobile-links product-dropdown">
+            </div>
+          </div>
+          
+        <a class="nav-links" href="pricing.html">Pricing</a>
+       
+        <div id="dropdown-company" class="nav-links product-dropdown">
+            <div>
+              <button id="menu-button-company" class="dropdown-btn">
+                Company
+                <svg viewBox="0 0 20 20" aria-hidden="true" id="company-arrow">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            <div id="menu-companys" class="dropdown-menu">
+              <div class="mobile-dropdown">
+                <a href="contact-us.html" role="menuitem" tabindex="-1" id="menu-item-0">Contact Us</a>
+                <a href="about-us.html" role="menuitem" tabindex="-1" id="menu-item-1">About Us</a>
+              </div>
+            </div>
+          </div>
+        
+    </div>
+    <button class="menu-btn"><img src="./images/menu.svg"></button>
+    <div class="mobile-nav" id="mobile-navigation">
+        <button id="close-btn"><img src="./images/close-menu.svg"></button>
+        <a class="mobile-links" href="correctional-facilities-langind-page.html">Correctional Facilities</a>
+        <a class="mobile-links" href="schools.html">Schools</a>
+        <div id="dropdown" class="mobile-links product-dropdown">
+            <div>
+              <button id="menu-button-mobile" aria-expanded="true" aria-haspopup="true" class="dropdown-btn ">
+                Products
+                <svg viewBox="0 0 20 20" aria-hidden="true" id="products-arrow-mobile">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            <div id="menu-mobile" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu product-dropdown-container">
+              <div class="product-dropdown-left">
+                <span class="dropdown-titles">Schools</span>
                 <div>
-                  <button id="menu-button-compan-mobile" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
-                    Company
-                    <svg viewBox="0 0 20 20" aria-hidden="true" id="company-arrow-mobile">
-                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                </div>
-              
-                <div id="menu-company-mobile" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu">
-                  <div class="mobile-dropdown">
-                    <a href="contact-us.html" role="menuitem" tabindex="-1" id="menu-item-0">Contact Us</a>
-                    <a href="about-us.html" role="menuitem" tabindex="-1" id="menu-item-1">About Us</a>
-                  </div>
+                    <a href="schools.html">
+                        <p class="link-title schools">Physical Visit</p>
+                        <p>Schedule a physical Visit Now </p>
+                    </a>
+                    <a href="schools.html">
+                        <p class="link-title schools">Video Visit</p>
+                        <p>Schedule a viedo Visit Now </p>
+                    </a>
+                    <a href="schools.html">
+                        <p class="link-title schools">Money Transfer</p>
+                        <p>Send Money Now </p>
+                    </a>
                 </div>
               </div>
-        </div>
-    </nav>
+              <div class="product-dropdown-right">
+                <span class="dropdown-titles">Correctional Facilities</span>
+                <div>
+                    <a href="correctional-facilities-langind-page.html">
+                        <p class="link-title  corectional">Physical Visit</p>
+                        <p>Schedule a physical Visit Now </p>
+                    </a>
+                    <a href="correctional-facilities-langind-page.html">
+                        <p class="link-title corectional">Video Visit</p>
+                        <p>Schedule a viedo Visit Now </p>
+                    </a>
+                    <a href="correctional-facilities-langind-page.html">
+                        <p class="link-title corectional">Money Transfer</p>
+                        <p>Send Money Now </p>
+                    </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          
+        <a class="mobile-links">Pricing</a>
+       
+        <div id="dropdown-mobile" class="mobile-links product-dropdown">
+            <div>
+              <button id="menu-button-compan-mobile" aria-expanded="true" aria-haspopup="true" class="dropdown-btn">
+                Company
+                <svg viewBox="0 0 20 20" aria-hidden="true" id="company-arrow-mobile">
+                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          
+            <div id="menu-company-mobile" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" class="dropdown-menu">
+              <div class="mobile-dropdown">
+                <a href="contact-us.html" role="menuitem" tabindex="-1" id="menu-item-0">Contact Us</a>
+                <a href="about-us.html" role="menuitem" tabindex="-1" id="menu-item-1">About Us</a>
+              </div>
+            </div>
+          </div>
+    </div>
+</nav>
     <section class="pricing-section">
       
         <div class="pricing-header">
@@ -176,13 +202,13 @@
         </div>
         <div class="pricing-card-cont">
             <div class="pricing-card">
-                <p class="pricing-card-title">Sending Money</p>
+                <p class="pricing-card-title">Money Transfer</p>
                 <span>Securely transfer funds to your loved ones in school or correctional facilities</span>
                 <div class="divider"></div>
                 <div class="pricing-card-bottom">
                     <p>Prices:</p>
                     <ul>
-                        <li>5% of money sent</li>
+                        <li>10% of the transction </li>
                     </ul>
                 </div>
                 <a href="correctional-facilities-langind-page.html"> Send Money Now </a>
@@ -194,9 +220,8 @@
                 <div class="pricing-card-bottom">
                     <p>Prices:</p>
                     <ul>
-                        <li>1000/15min</li>
-                        <li>2000/30min</li>
-                        <li>5000/60min</li>
+                        <li>Free</li>
+                     
                     </ul>
                 </div>
                 <a href="correctional-facilities-langind-page.html"> Schedule A Physical Visit </a>
@@ -208,10 +233,24 @@
                 <div class="pricing-card-bottom">
                     <p>Prices:</p>
                     <ul>
-                        <li>250 Rwf /min</li>
+                      <li>2000 Rwf/15min</li>
+                      <li>4000 Rwf/30min</li>
                     </ul>
                 </div>
                 <a href="correctional-facilities-langind-page.html"> Schedule A Video Now</a>
+            </div>
+            <div class="pricing-card">
+                <p class="pricing-card-title">Telephone call</p>
+                <span>Schedule a call and stay connected with your loved ones in school or correctional facilities</span>
+                <div class="divider"></div>
+                <div class="pricing-card-bottom">
+                    <p>Prices:</p>
+                    <ul>
+                 
+                        <li>300 Rwf/5min</li>
+                    </ul>
+                </div>
+                <a href="correctional-facilities-langind-page.html"> Schedule A Telephone Call</a>
             </div>
             
         </div>
@@ -253,7 +292,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-text">© eHuza 2023. All rights reserved.</p>
+            <p class="footer-text">© eHuza 2024. All rights reserved.</p>
             <div>
                 <a href="#" class="footer-text">Privacy Policy</a>
                 <a href="#" class="footer-text">Terms of Service</a>

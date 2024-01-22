@@ -1,11 +1,17 @@
 @media screen and (max-width: 1240px) {
+  .hero-section-main-left > h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+
   .hero-section-main{
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
     max-height: unset;
-    height: 70rem;
     gap: 4rem;
+    min-height: unset;
   }
   .img-cont-hero-page{
     right: unset;
@@ -33,7 +39,6 @@
 }
 @media screen and (max-width: 1100px) {
   .hero-section-main{
-
     height: 65rem;
 
   }
@@ -77,11 +82,9 @@
 
     
   }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .hero-section-main{
-
-    height: 60rem;
-
+    height: 50rem
   }
     .hero-section-main > h1 {
         font-size: 4rem;
@@ -242,6 +245,11 @@
     nav,.hero-section-main  {
       padding-inline: 1rem;
     }
+    .cta-btn a{
+      padding: .8rem 1.2rem ;
+      font-size: .8rem;
+      font-weight: 500;
+    } 
 }
 @media screen and (max-width: 530px) {
   .image-text {

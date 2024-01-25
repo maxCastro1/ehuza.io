@@ -39,9 +39,11 @@
   }
   .correctional-hero-section-header{
     display: flex;
-    gap: 1.5rem;
+    gap: 4rem;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+
   }
   .how-it-works-into{
     display: flex;
@@ -65,8 +67,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    text-align: center;
-    align-items: center;
+   
   }
   .corectional-hero-section-header-left > h1{
     font-size: 3rem;
@@ -85,12 +86,10 @@
     max-width: 40rem;
   }
   .correctional-hero-section-main{
-     display: flex;
+     display: grid;
+     grid-template-columns: repeat(1, auto);
      gap: 2rem;
-     width: 100%;
-     justify-content: center;
-     flex-wrap: wrap;
-     margin-top: 4rem;
+     width: 50%;
   }
   .service-card{
     display: flex;
@@ -202,7 +201,6 @@ height: 1.5rem;
 .grid {
   display: grid;
   grid-template-columns: repeat(3,auto);
-  align-items: center;
   align-items: stretch;
 
 }
@@ -310,6 +308,8 @@ width: 24px;
   .how-it-works-card-cont {
     display: grid;
     grid-template-columns: repeat(2,auto);
+    align-items: stretch;
+    
   }
   .how-it-works-card {
     max-width: 25rem;
@@ -341,6 +341,13 @@ width: 24px;
     align-items: center;
     text-align: center;
   }
+  }
+  @media screen and (max-width: 760px){
+    .how-it-works-card-cont {
+  
+      grid-template-columns: repeat(1,auto);
+      
+    }
   }
 
 @media screen and (max-width: 570px){

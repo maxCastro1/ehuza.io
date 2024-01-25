@@ -76,7 +76,7 @@
   }
   .service-card{
     display: flex;
-min-width: 20rem;
+min-width: 18rem;
 width: max-content;
 max-width: 26rem;
 padding:1rem;
@@ -145,7 +145,7 @@ width: 24px;
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  background-color: white;
+  background-color: rgba(228, 220, 211, 0.50);
   align-items: center;
  
 }
@@ -325,4 +325,8 @@ width: 24px;
   .how-it-works-card-description{
     font-size: .8rem;
   }
+}
+.correctional-brown-img{
+  width: 1rem !important;
+  height: 1rem !important;
 }

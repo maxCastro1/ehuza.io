@@ -38,6 +38,10 @@ nav,footer {
     border: 1px solid rgba(0, 131, 255, 0.20);
     background: #D1E9FF;
 }
+.how-it-works-section{
+    background-color: hsla(209, 100%, 50%, 0.1);
+   
+  }
 
 
 @media screen and (max-width: 1024px){

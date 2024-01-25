@@ -116,7 +116,11 @@ nav {
  width: 18px;
  height: 18px;
 }
-.product-dropdown-left .dropdown-link-cont img {
+.brown-img {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+.product-dropdown-left .dropdown-link-cont img,.brown-image {
   width: 16px;
   height: 16px;
   object-fit: contain;
